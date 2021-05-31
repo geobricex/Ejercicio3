@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="option">
+        <item>Revista InGenio</item>
+        <item>Ciencia y Tecnología</item>
+        <item>Ciencia Sociales y Económicas</item>
+    </string-array>>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnSingoff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="60dp"
+        android:rotationX="0"
+        android:text="Seleccione la revista:"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <EditText
+        android:id="@+id/txtID"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="164dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="invisible"
+        tools:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/btnView"
+        android:layout_width="104dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="144dp"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-9dp"
+        app:srcCompat="@drawable/pageheadertitleimage_es_es" />
+
+    <EditText
+        android:id="@+id/lblMView"
+        android:layout_width="393dp"
+        android:layout_height="339dp"
+        android:layout_below="@+id/btnView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="25dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:duplicateParentState="true"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="start|top"
+        android:inputType="none" />
+
+    <RadioGroup
+        android:id="@+id/rdG"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="553dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="8dp">
+
+        <RadioButton
+            android:id="@+id/rbM1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Retrofit" />
+
+        <RadioButton
+            android:id="@+id/rbM2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volley" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="112dp" />
+
+    <TextView
+        android:id="@+id/lblGreetings"
+        android:layout_width="193dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/lblMView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-97dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="41dp"
+        android:layout_toEndOf="@+id/rdG"
+        android:textColor="@color/purple_200"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSingOff"
+        android:layout_width="194dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="13dp"
+        android:text="Cerrar Sesión" />
+
+</RelativeLayout>
