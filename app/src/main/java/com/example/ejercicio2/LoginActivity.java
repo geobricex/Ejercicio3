@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(response.equals("Login Correcto!")){
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     Bundle b = new Bundle();
-                    b.putString("Acceso", txtUser.toUpperCase());
+                    b.putString("Access", txtUser.toUpperCase());
                     intent.putExtras(b);
                     startActivity(intent);
                 }
