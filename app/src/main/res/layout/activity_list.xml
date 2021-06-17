@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="73dp"
         android:layout_marginTop="7dp"
-        android:text="Revista Ciencia y Tecnología "
+        android:text="Revista "
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold" />

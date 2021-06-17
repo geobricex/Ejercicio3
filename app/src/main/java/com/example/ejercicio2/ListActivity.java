@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.ejercicio2.models.ListElement;
 import com.google.gson.JsonArray;
@@ -24,17 +25,17 @@ public class ListActivity extends AppCompatActivity {
     List<ListElement> listElementList;
     JsonArray JSONdata;
     Button btnidRetun;
+    TextView idTituloRevista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+        initialize();
         JsonParser parser = new JsonParser();
         Bundle bundle = this.getIntent().getExtras();
         JSONdata = parser.parse(bundle.getString("Data")).getAsJsonArray();
-
-        Log.i("Logs", "JSON:" + JSONdata.size());
-        initialize();
+        idTituloRevista.setText(bundle.getString("Review"));
         btnidRetun.setOnClickListener(v -> {
             returnActivity();
         });
@@ -43,6 +44,7 @@ public class ListActivity extends AppCompatActivity {
 
     public void initialize() {
         btnidRetun = findViewById(R.id.btnidRetun);
+        idTituloRevista =  findViewById(R.id.idTituloRevista);
     }
 
     public void returnActivity() {

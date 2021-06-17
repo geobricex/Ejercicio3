@@ -269,6 +269,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ListActivity.class);
             Bundle b = new Bundle();
             b.putString("Data", JSONorigin.toString());
+            b.putString("Review", option.getSelectedItem().toString());
+
             intent.putExtras(b);
             startActivity(intent);
         } else {
